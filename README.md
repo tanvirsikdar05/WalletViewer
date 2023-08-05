@@ -1,12 +1,11 @@
-<<<<<<< HEAD
 
-# Blance View
+# Wallet Viewer
 
-Blance View help you to Show Blance easily like Bkash , Nogod Blance Check.
+Wallet Viewer help you to Show Blance easily like Bkash , Nogod Blance Check.
 
 ## Screenshots
 
-![App Screenshot](https://github.com/tanvirsikdar05/BlanceView/assets/35676901/81369361-a5e2-460c-b18e-392151141b6c)
+![App Screenshot](https://github.com/tanvirsikdar05/WalletViewer/assets/35676901/66de03c6-e447-47b0-976c-40abe516b35c)
 
 
 
@@ -18,84 +17,34 @@ Add this Dependency to your android java/kotlin project
 ```bash
   dependencies {
 
-	        implementation 'com.github.tanvirsikdar05:BlanceView:1.0.0'
+	        implementation 'com.github.tanvirsikdar05:WalletViewer:1.4.0'
 	}
 ```
 ## Usage
 ```
-<com.tanvirsikdar05.bkashblance.BlanceView
-        android:id="@+id/blanceview"
+<com.tanvirsikdar.walletviewer.WalletViewer
+        android:id="@+id/walletview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="20dp"
-        app:currencyImage="@drawable/btc"/>
+        app:currencyImage="@drawable/btcicon"/>
 ```
 For change Currency icon Use `app:currencyImage="Your_Drawable_icon"`
 
 ## Java / kotlin
 
 ```
-val blanceView = findViewById<BlanceView>(R.id.blanceview) 
-blanceView.setCurrentBlance("120")    //Set User Blance as String
-blanceView.setOnClickListener {
-         blanceView.show()            //show Blance
+val _walletview = findViewById(R.id.walletview) 
+_walletview.setCurrentBlance("120")    //Set User Blance as String
+_walletview.setOnClickListener {
+         _walletview.show()            //show Blance
  }     
  ```
- To Set Blance call `blanceView.setCurrentBlance("Your_Blance_here")` Then Show Blance call this `blanceView.show()`                        
-
-
-
-    
-=======
-
-# Blance View
-
-Blance View help you to Show Blance easily like Bkash , Nogod Blance Check.
-
-## Screenshots
-
-![App Screenshot](https://github.com/tanvirsikdar05/BlanceView/assets/35676901/81369361-a5e2-460c-b18e-392151141b6c)
+ To Set Blance call `_walletview.setCurrentBlance("Your_Blance_here")` Then Show Blance call this `_walletview.show()`                        
 
 
 
 
-## Gradle
-
-Add this Dependency to your android java/kotlin project
-
-```bash
-  dependencies {
-
-	        implementation 'com.github.tanvirsikdar05:BlanceView:1.0.0'
-	}
-```
-## Usage
-```
-<com.tanvirsikdar05.bkashblance.BlanceView
-        android:id="@+id/blanceview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="20dp"
-        app:currencyImage="@drawable/btc"/>
-```
-For change Currency icon Use `app:currencyImage="Your_Drawable_icon"`
-
-## Java / kotlin
-
-```
-val blanceView = findViewById<BlanceView>(R.id.blanceview) 
-blanceView.setCurrentBlance("120")    //Set User Blance as String
-blanceView.setOnClickListener {
-         blanceView.show()            //show Blance
- }     
- ```
- To Set Blance call `blanceView.setCurrentBlance("Your_Blance_here")` Then Show Blance call this `blanceView.show()`                        
-
-
-
-    
->>>>>>> 1969715e060724556e1b1f38e78559873100629e
